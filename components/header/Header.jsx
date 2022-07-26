@@ -5,7 +5,7 @@ import React from 'react'
 
 function Header() {
   return (
-    <Stack w='100vw' minH='90vh' justifyContent='center' alignItems='center' gap={0} bgImage={'/assets/bg-curvy-desktop.svg'} bgSize='contain' bgPosition='bottom' bgRepeat='no-repeat' >
+    <Stack userSelect='none' w='100vw' minH='90vh' justifyContent='center' alignItems='center' gap={0} bgImage={'/assets/bg-curvy-desktop.svg'} bgSize='contain' bgPosition='bottom' bgRepeat='no-repeat' >
       <Image src='/assets/illustration-intro.png' alt='illustration' width='500px' height='500px' objectFit='contain' /> 
       <Box maxW='600px' display='flex' flexDirection='column' alignItems='center' gap={5}>
         <Heading as='h1' textAlign='center' >

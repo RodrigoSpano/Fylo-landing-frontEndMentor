@@ -7,7 +7,7 @@ const Navbar = () => {
     <Stack h='100px' w='100vw' direction='row' justifyContent='space-between' px='20' alignItems='center' userSelect='none'>
       <Image src='/assets/logo.svg' alt='logo' width='200px' height='50px' />
       <Flex gap={10}>
-        <Link href='#'>
+        <Link href='#features'>
           <Text cursor='pointer'>Features</Text>
         </Link>
         <Link href='#'>

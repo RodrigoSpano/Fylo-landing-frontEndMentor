@@ -1,7 +1,11 @@
 import { Stack } from '@chakra-ui/react'
 import Head from 'next/head'
 import Header from '../components/header/Header'
+import Comments from '../components/testimonial/Comments'
+import Features from '../components/features/Features'
+import Productive from '../components/main/Productive'
 import Navbar from '../components/navbar/Navbar'
+import Form from '../components/form/Form'
 
 
 export default function Home() {
@@ -17,9 +21,15 @@ export default function Home() {
         <Navbar />
         <Header />
       </Stack>
-      <Stack minH='100vh' w='100vw'>
 
+      <Features />
+      <Productive />
+
+      <Stack minH='100vh' w='100vw'>
+        <Comments />
+        <Form />
       </Stack>
+      
     </Stack>
   )
 }
