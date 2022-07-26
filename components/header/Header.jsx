@@ -20,7 +20,7 @@ function Header() {
           borderRadius={20}
           px='20'
           h='40px'
-          _hover={{transition: 'all ease 0.3s' ,bg:'hsl(176, 68%, 64%)'}}
+          _hover={{transition: 'all linear 0.3s' ,bg:'hsl(176, 68%, 64%)'}}
           >
           Get Started
           </Button>

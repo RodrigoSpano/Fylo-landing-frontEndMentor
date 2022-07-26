@@ -6,6 +6,7 @@ import Features from '../components/features/Features'
 import Productive from '../components/main/Productive'
 import Navbar from '../components/navbar/Navbar'
 import Form from '../components/form/Form'
+import Footer from '../components/footer/Footer'
 
 
 export default function Home() {
@@ -25,9 +26,10 @@ export default function Home() {
       <Features />
       <Productive />
 
-      <Stack minH='100vh' w='100vw'>
+      <Stack minH='100vh' w='100vw' >
         <Comments />
         <Form />
+        <Footer />
       </Stack>
       
     </Stack>

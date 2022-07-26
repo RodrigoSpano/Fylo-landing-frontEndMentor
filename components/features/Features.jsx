@@ -9,6 +9,7 @@ const Features = () => {
         templateRows='repeat(2, 1fr)'
         templateColumns='repeat(2, 1fr)'
         gap={48}
+        userSelect='none'
       >
         <GridItem>
           <FeatureCard src='/assets/icon-access-anywhere.svg' text='The ability to use a smartphone, tablet, or computer to access your account means your files follow you anywhere'/>
