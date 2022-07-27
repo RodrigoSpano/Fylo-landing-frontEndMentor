@@ -30,14 +30,14 @@ function Footer() {
         </Flex>
 
         <Stack>
-          <Heading fontSize='14px' as='h4'>About Us</Heading>
+          <Heading fontFamily='Raleway, sans-serif' fontSize='14px' as='h4'>About Us</Heading>
           <Text>Jobs</Text>
           <Text>Press</Text>
           <Text>Blog</Text>
         </Stack>
 
         <Stack>
-          <Heading as='h4' fontSize='14px'>Contact Us</Heading>
+          <Heading fontFamily='Raleway, sans-serif' as='h4' fontSize='14px'>Contact Us</Heading>
           <Text>Terms</Text>
           <Text>Privacy</Text>
         </Stack>
