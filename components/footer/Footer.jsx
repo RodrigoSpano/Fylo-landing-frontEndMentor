@@ -1,19 +1,18 @@
-import { Box, Flex, Heading, Link, Stack, Text } from '@chakra-ui/react'
-import Image from 'next/image'
+import { Box, Flex, Heading, Link, Stack, Text, Image } from '@chakra-ui/react'
 import {BsFacebook, BsInstagram, BsTwitter} from 'react-icons/bs'
 
 function Footer() {
   return (
-    <Stack bgColor='hsl(216, 53%, 9%)' minH='md' zIndex='0' px={20} userSelect='none'>
-      <Box w='sm' pt={10}>
-        <Image src='/assets/logo.svg' alt='logo' width='200px' height='100px' objectFit='contain'/>
+    <Stack bgColor='hsl(216, 53%, 9%)' minH='md' zIndex='0' px={{base:'5',sm:20}} userSelect='none'>
+      <Box w='sm' pt={{base:'20',sm:'10'}}>
+        <Image src='/assets/logo.svg' alt='logo' width='200px' height='70px' objectFit='contain'/>
       </Box>
 
-      <Flex direction='row' wrap='wrap' gap={48} justifyContent='center'>
+      <Flex direction={{base:'column',sm:'row'}} wrap={{base:'nowrap',sm:'wrap'}} gap={{base:'10',sm:'48'}} justifyContent='center' py={{base:'10', sm:'5'}}>
 
-        <Stack direction='row' w='sm' alignItems='center' justifyContent='center'>
-          <Image src='/assets/icon-location.svg' alt='location' width='50px' height='50px' objectFit='contain'/>
-          <Text pt='10' fontSize='12px'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque veniam velit quia, voluptatem iste aliquam ipsa eveniet error, quo, ratione soluta similique excepturi repellendus facere a sint ad dolorum animi?
+        <Stack direction='row' w='sm' alignItems='center' justifyContent='center' pr={{base:'10', sm:'0'}}>
+          <Image src='/assets/icon-location.svg' alt='location' width='20px' height='20px' objectFit='contain'/>
+          <Text pt={{base:'2',sm:'10'}} fontSize='12px' w={{base:'280px',sm:'315px'}}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque veniam velit quia, voluptatem iste aliquam ipsa eveniet error, quo.
           </Text>
         </Stack>
 

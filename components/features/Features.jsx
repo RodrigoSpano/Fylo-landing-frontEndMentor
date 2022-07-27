@@ -6,16 +6,16 @@ const Features = () => {
   return (
     <Stack id='features' w='100vw' alignItems='center' justifyContent='center' py={10} >
       <Grid
-        templateRows='repeat(2, 1fr)'
-        templateColumns='repeat(2, 1fr)'
+        templateRows={{base:'repeat(1, 1fr)',sm:'repeat(2, 1fr)'}}
+        templateColumns={{base:'repeat(1, 1fr)',sm:'repeat(2, 1fr)'}}
         gap={48}
         userSelect='none'
       >
         <GridItem>
-          <FeatureCard src='/assets/icon-access-anywhere.svg' title='Access your files, anywhere' text='The ability to use a smartphone, tablet, or computer to access your account means your files follow you anywhere'/>
+          <FeatureCard src='/assets/icon-access-anywhere.svg' title='Access your files, anywhere' text='The ability to use a smartphone, tablet, or computer to access your account means your files follow you anywhere.'/>
         </GridItem>
         <GridItem>
-          <FeatureCard src='/assets/icon-security.svg' title='Security you cant trust' text='2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files' />
+          <FeatureCard src='/assets/icon-security.svg' title='Security you cant trust' text='2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.' />
         </GridItem>
         <GridItem>
           <FeatureCard src='/assets/icon-collaboration.svg' title='Real-time collaboration' text='Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.' />

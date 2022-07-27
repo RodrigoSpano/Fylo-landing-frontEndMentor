@@ -1,12 +1,11 @@
-import { Box, Button, Heading, Stack, Text } from '@chakra-ui/react'
-import Image from 'next/image'
+import { Box, Button, Heading, Stack, Text, Image } from '@chakra-ui/react'
 import Link from 'next/link'
 import React from 'react'
 
 function Header() {
   return (
     <Stack userSelect='none' w='100vw' minH='90vh' justifyContent='center' alignItems='center' gap={0} bgImage={'/assets/bg-curvy-desktop.svg'} bgSize='contain' bgPosition='bottom' bgRepeat='no-repeat' >
-      <Image src='/assets/illustration-intro.png' alt='illustration' width='500px' height='500px' objectFit='contain' /> 
+      <Image src='/assets/illustration-intro.png' alt='illustration' width='500px' height={{base:'200px',sm:'400px'}} objectFit='contain' /> 
 
       <Box maxW='600px' display='flex' flexDirection='column' alignItems='center' gap={5}>
         <Heading as='h1' fontSize={{base:'20px', sm:'26px'}} w={{base:'250px',sm:'400px'}} textAlign='center' fontFamily='Raleway, sans-serif'>
