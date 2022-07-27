@@ -1,6 +1,5 @@
 import { Flex, Heading, Image, Stack, Text } from '@chakra-ui/react'
-// import Image from 'next/image'
-import React from 'react'
+import {motion} from 'framer-motion'
 
 const Productive = () => {
 
@@ -14,10 +13,13 @@ const Productive = () => {
         <Text w='400px'>Never let location be an issue when accessing your files. Fylo has you covered for all of your storage needs.</Text>
         <Text w='400px'>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</Text>
 
-        <Flex display='flex' flexDirection='row' gap={2} borderBottom='1px solid hsl(176, 68%, 64%)' _hover={{borderBottom: '1px solid white'}} userSelect='none' w='max' alignItems='center' >
-          <Text color={sky} _hover={{color: 'gray.200'}} >See how Fylo works</Text>
+        
+        <Flex display='flex' flexDirection='row' gap={2} borderBottom='1px solid hsl(218, 28%, 13%)' _hover={{borderBottom:'1px solid hsl(176, 68%, 64%)'}} userSelect='none' w='max' alignItems='center' >
+          <Text color={sky} cursor='pointer' >See how Fylo works</Text>
+        
           <Image src='/assets/icon-arrow.svg' alt='arrow' objectFit='contain' width='15px' height='15px'  />
         </Flex>
+        
 
       </Flex>
     </Stack>
